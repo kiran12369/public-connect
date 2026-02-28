@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: public-connect-api
+    runtime: node
+    rootDir: server
+    buildCommand: npm install
+    startCommand: node server.js
