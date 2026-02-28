@@ -1,0 +1,114 @@
+{
+  "project_info": {
+    "project_number": "800403281368",
+    "firebase_url": "https://the-hoak-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "the-hoak",
+    "storage_bucket": "the-hoak.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800403281368:android:a1f47865a540276399cead",
+        "android_client_info": {
+          "package_name": "com.example.hoak_partner_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800403281368-3ivih5bra0ir3jojomgcs5d4ov61mad3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hoak_partner_app",
+            "certificate_hash": "e53c33c13ab314a014cb855f250d708c63dbfccc"
+          }
+        },
+        {
+          "client_id": "800403281368-ffd1ua807keplki2lvq8urn9lcv0ao9l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoclz4HwgeiBSW05SJ4G1don3Z7Tifkt4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800403281368-ffd1ua807keplki2lvq8urn9lcv0ao9l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800403281368:android:12aaba24fbb950a099cead",
+        "android_client_info": {
+          "package_name": "com.telangana.publicconnect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800403281368-ffd1ua807keplki2lvq8urn9lcv0ao9l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoclz4HwgeiBSW05SJ4G1don3Z7Tifkt4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800403281368-ffd1ua807keplki2lvq8urn9lcv0ao9l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800403281368:android:003fb90021b1f7d099cead",
+        "android_client_info": {
+          "package_name": "the_hoah.R06.K2004"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800403281368-peegtcg5ive3o8k1odqg19dcno7m6fnb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "the_hoah.R06.K2004",
+            "certificate_hash": "e53c33c13ab314a014cb855f250d708c63dbfccc"
+          }
+        },
+        {
+          "client_id": "800403281368-ffd1ua807keplki2lvq8urn9lcv0ao9l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoclz4HwgeiBSW05SJ4G1don3Z7Tifkt4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800403281368-ffd1ua807keplki2lvq8urn9lcv0ao9l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

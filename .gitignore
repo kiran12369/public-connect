@@ -1,0 +1,30 @@
+# Env files - never commit secrets
+.env
+.env.local
+.env.*.local
+server/.env
+client/.env.local
+
+# Firebase
+**/serviceAccountKey.json
+server/config/serviceAccountKey.json
+
+# Uploads (user data)
+server/uploads/*
+!server/uploads/.gitkeep
+
+# Dependencies
+node_modules/
+**/node_modules/
+
+# MongoDB local data (never commit)
+server/data/
+
+# Build outputs
+client/.next/
+client/out/
+client/build/
+
+# Misc
+.DS_Store
+*.log
