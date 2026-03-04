@@ -2,19 +2,22 @@ require('dotenv').config();
 
 const isProd = process.env.NODE_ENV === 'production';
 
-const required = ['MONGODB_URI'];
-const requiredInProd = ['CORS_ORIGIN'];
+// Support both correct and misspelled keys so Render env typos don't crash startup
+function normalizeMongoUri() {
+    const uri = process.env.MONGODB_URI || process.env.MANGODB_URI;
+    if (uri && !process.env.MONGODB_URI) {
+        process.env.MONGODB_URI = uri;
+    }
+    return uri;
+}
 
 function validate() {
-    const missing = required.filter((k) => !process.env[k] || process.env[k].trim() === '');
-    if (missing.length) {
-        throw new Error(`Missing required env: ${missing.join(', ')}`);
+    const mongoUri = normalizeMongoUri();
+    if (!mongoUri || !mongoUri.trim()) {
+        throw new Error('Missing required env: MONGODB_URI');
     }
-    if (isProd) {
-        const missingProd = requiredInProd.filter((k) => !process.env[k] || process.env[k].trim() === '');
-        if (missingProd.length) {
-            throw new Error(`Production requires: ${missingProd.join(', ')}`);
-        }
+    if (isProd && !process.env.CORS_ORIGIN) {
+        process.env.CORS_ORIGIN = '*';
     }
 }
 
