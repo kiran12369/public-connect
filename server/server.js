@@ -21,11 +21,9 @@ app.use(helmet({
 }));
 
 // CORS
-const corsOrigin = process.env.CORS_ORIGIN;
-const corsOptions = corsOrigin
-    ? { origin: corsOrigin.split(',').map(o => o.trim()) }
-    : {};
-app.use(cors(corsOptions));
+// For now allow all origins so the Vercel frontend can call the API without CORS errors.
+// (We can tighten this later by reading CORS_ORIGIN from env again.)
+app.use(cors({ origin: true, credentials: true }));
 
 // Rate limiting
 const limiter = rateLimit({
